@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD3ku6BjUdbucQHs_uvpwxy6CLrJFo4wgE"></script>
+    <script>
+    var map;
+    var infoWindow;
+
+    function initialize(){
+      var center = new google.maps.LatLng(39.7392, -104.9903);
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: center,
+        zoom: 10
+      });
+
+      //use specific request to find what we are searching for.  Radius is in meters
+      var request = {
+        location: center,
+        radius: 10000,
+        keyword: "(crossfit) OR (CrossFit) OR (Crossfit)"
+      };
+
+      //open info window on google maps to display information.
+
+      infowindow = new google.maps.InfoWindow();
+
+      //use a variable to look for what we are searching for.
+      var service = new google.maps.places.PlacesService(map);
+
+      service.nearbySearch(request, callback);
+    }
+
+    function callback(results, status) {
+      if(status == google.maps.places.PlacesServiceStatus.OK){
+        for (var i = 0; i < results.length; i++) {
+          createMarker(results[i]);
+        }
+      }
+    }
+
+    function createMarker(place) {
+      var placeLoc = place.geometry.location;
+      var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location
+      });
+
+      //single out each search result with a listener
+
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.setContent(place.name);
+        infowindow.open(map, this);
+      });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+    <style>
+    html, body, #map {
+      height: 97%;
+      margin: 0px;
+      padding: 0px
+    }
+
+    #map{
+      position: relative;
+      top:10vh;
+    }
+
+    header{
+
+      width: 100vw;
+      height: 10vh;
+      position: fixed;
+    }
+
+    .headerSearch li{
+      position: relative;
+      font-family: Helvetica;
+      font-weight: 300;
+      color: white;
+      list-style: none;
+      float: left;
+      margin-left: 0.5em;
+      font-size: 1.3em;
+      top: 2vh;
+      left: 72vw;
+    }
+
+    .headerSearch li:first-child a{
+      color: gray;
+      text-decoration: none;
+    }
+
+    .headerSearch li:first-child a:hover{
+      color: #4DB2AD;
+      text-decoration: underline;
+    }
+
+    .headerSearch li a{
+      color: gray;
+      text-decoration: none;
+    }
+
+    .headerSearch li:nth-child(2) a:hover{
+      color: #4DB2AD;
+      text-decoration: underline;
+    }
+
+    .headerSearch li:last-child a:hover{
+      color: #4DB2AD;
+      text-decoration: underline;
+    }
+
+    </style>
+
+    <title>Gyms with Markers</title>
+  </head>
+  <body>
+    <header>
+    <ul class="headerSearch">
+      <li><a href="index.html">Home</a> | </li>
+      <li><a href="place.html">Search</a> | </li>
+      <li><a href="gamesAth.html">Top 40</a></li>
+    </ul>
+  </header>
+    <div id="map"></div>
+  </body>
+</html>

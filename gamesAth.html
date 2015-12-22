@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Games Athletes</title>
+    <link rel="stylesheet" href="css/gamesAth.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+
+    <header>
+    <ul class="headerSearch">
+      <li><a href="index.html">Home</a> | </li>
+      <li><a href="gamesAth.html">Top 40</a> | </li>
+      <li><a href="chart.html">Pie Chart</a> | </li>
+      <li><a href="line.html">Line Chart</a></li>
+    </ul>
+  </header>
+<main>
+    <p class="title">Top 40 CrossFit Athletes from the 2015 CrossFit Games</p>
+    <p class="description">Click to see results for 2015 games by person or view the following charts</p>
+
+<div class="buttons">
+    <button id="top40" type="submit" name="name">Click for All Top 40</button>
+  <form class="" action="chart.html">
+    <button id="top40Nation" type="submit" name="name">Top 40 by Nation</button>
+  </form>
+  <form class="" action="line.html">
+    <button id="top40Event" type="submit" name="name">Top 40 by Event Finishes</button>
+  </form>
+</div>
+
+  <table id="tabl" border="1" cellspacing="0" cellpadding="4">
+    <tr>
+      <th>Athlete Name</th>
+      <th>Athlete Affiliate</th>
+      <th>State</th>
+      <th>Country</th>
+      <th>Total Points at Games</th>
+      <th>CrossFit Ranking</th>
+    </tr>
+  </table>
+
+</main>
+
+
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/athletes.json"></script>
+  <script type="text/javascript" src="js/gamesAth.js"></script>
+
+</html>

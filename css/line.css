@@ -1,0 +1,79 @@
+body{
+  margin: 0;
+}
+
+header{
+  width: 100vw;
+  height: 10vh;
+}
+
+.headerSearch li{
+  position: relative;
+  font-family: Helvetica;
+  font-weight: 300;
+  color: gray;
+  list-style: none;
+  float: left;
+  margin-left: 0.5em;
+  font-size: 1.3em;
+  top: 2vh;
+  left: 65vw;
+}
+
+.headerSearch li:first-child a:hover{
+  color: #4DB2AD;
+  text-decoration: underline;
+}
+
+.headerSearch li a{
+  color: gray;
+  text-decoration: none;
+}
+
+.headerSearch li:nth-child(2) a:hover{
+  color: #4DB2AD;
+  text-decoration: underline;
+}
+
+.headerSearch li:nth-child(3) a:hover{
+  color: #4DB2AD;
+  text-decoration: underline;
+}
+
+.headerSearch li:last-child a{
+  color: #4DB2AD;
+  text-decoration: underline;
+}
+
+main{
+  position: relative;
+  top: 5vh;
+  left: 12vw;
+}
+
+#tabl{
+  position: relative;
+  font-family: Helvetica;
+  text-align: center;
+  border: none;
+  border-color: white;
+
+}
+
+#tabl tr{
+  border: none;
+}
+
+#tabl th{
+  color: gray;
+  font-weight: 200;
+  font-size: 1.2em;
+  border: none;
+}
+
+#tabl td{
+  color: #4DB2AD;
+  font-weight: 100;
+  font-size: 1.0em;
+  border: 0px, 0px, 1px, 0px;
+}

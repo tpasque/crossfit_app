@@ -1,0 +1,145 @@
+html{
+  background: url(hind_gym_7.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+body{
+  margin: 0;
+}
+
+header{
+  /*background-color: black;*/
+  /*opacity: 0.65;*/
+  width: 100vw;
+  height: 14vh;
+  position: fixed;
+}
+
+.topSearch{
+  position:relative;
+
+}
+
+.headerSearch li{
+  position: relative;
+  font-family: Helvetica;
+  font-weight: 300;
+  color: white;
+  list-style: none;
+  float: left;
+  margin-left: 0.5em;
+  font-size: 1.3em;
+  top: 2vh;
+  left: 72vw;
+}
+
+.headerSearch li:first-child a{
+  color: #4DB2AD;
+  text-decoration: underline;
+}
+
+.headerSearch li a{
+  color: white;
+  text-decoration: none;
+}
+
+.headerSearch li:nth-child(2) a:hover{
+  color: #4DB2AD;
+  text-decoration: underline;
+}
+
+.headerSearch li:last-child a:hover{
+  color: #4DB2AD;
+  text-decoration: underline;
+}
+
+
+main{
+  top: 14vh;
+  width: 100vw;
+  height: 76vh;
+  position: relative;
+}
+
+.formHolder{
+  width: 100vw;
+  height: 25vh;
+  position: relative;
+  top: 30%;
+}
+
+.searchGymText{
+  position: relative;
+  font-family: Helvetica;
+  color: white;
+  font-weight: 100;
+  width: 60vw;
+  margin: 0 auto;
+  top: 2vh;
+  text-align: center;
+  font-size: 3.5em;
+  z-index: 1;
+}
+
+.searchGymButton{
+  background-color: #4DB2AD;
+  color: white;
+  position: relative;
+  font-family: Helvetica;
+  font-size: 1.4em;
+  font-weight: 200;
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+  width: 25vw;
+  height: 8vh;
+  margin: 0 auto;
+  top: 12vh;
+  left: 35vw;
+  text-align: center;
+  z-index: 1;
+}
+
+.searchGymButton:hover{
+  background: blue;
+}
+
+/*.boxWhite{
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: white;
+  opacity: 0.5;
+  z-index: 2;
+}*/
+
+footer{
+  position: fixed;
+  top: 90vh;
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.footerSearch li{
+  position: relative;
+  font-family: Helvetica;
+  color: white;
+  list-style: none;
+  font-weight: 300;
+  float: left;
+  margin-left: 0.5em;
+  font-size: 1.3em;
+  top: 2vh;
+  left: 5vw;
+}
+
+.footerSearch li a{
+  color: white;
+  text-decoration: none;
+}

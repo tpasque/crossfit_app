@@ -1,0 +1,134 @@
+body{
+  margin: 0;
+}
+
+header{
+  width: 100vw;
+  height: 10vh;
+}
+
+.headerSearch li{
+  position: relative;
+  font-family: Helvetica;
+  font-weight: 300;
+  color: gray;
+  list-style: none;
+  float: left;
+  margin-left: 0.5em;
+  font-size: 1.3em;
+  top: 2vh;
+  left: 65vw;
+}
+
+.headerSearch li:first-child a{
+  color: gray;
+  text-decoration: none;
+}
+
+.headerSearch li:first-child a:hover{
+  color: #4DB2AD;
+  text-decoration: underline;
+}
+
+.headerSearch li a{
+  color: gray;
+  text-decoration: none;
+}
+
+.headerSearch li:nth-child(2) a{
+  color: #4DB2AD;
+  text-decoration: underline;
+}
+
+.headerSearch li:nth-child(3) a:hover{
+  color: #4DB2AD;
+  text-decoration: underline;
+}
+
+.headerSearch li:last-child a:hover{
+  color: #4DB2AD;
+  text-decoration: underline;
+}
+
+main{
+  position: relative;
+  top: 5vh;
+  left: 12vw;
+}
+
+.title{
+  position: relative;
+  font-family: Helvetica;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: gray;
+}
+
+.description{
+  position: relative;
+  font-family: Helvetica;
+  font-size: 1.2em;
+  font-weight: 200;
+  color: gray;
+}
+
+.buttons{
+  position: relative;
+  left: 3vw;
+  background-color: #4DB2AD;
+  color: white;
+  position: relative;
+  font-family: Helvetica;
+  font-size: 1.4em;
+  font-weight: 200;
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+  width: 25vw;
+  height: 12vh;
+  /*margin: 0 auto;*/
+  text-align: center;
+  z-index: 1;
+
+}
+
+.top40{
+  position: relative;
+  top: 10px;
+
+
+}
+
+.top40Nation{
+  position: relative;
+  top: 10px;
+}
+
+.top40Event{
+  position: relative;
+  top: 10px;
+
+}
+
+#tabl{
+  position: relative;
+  font-family: Helvetica;
+  text-align: center;
+  border: none;
+  border-color: white;
+  top: 4vh;
+  text-decoration: underline;
+
+}
+#tabl th{
+  color: gray;
+  font-weight: 200;
+  font-size: 1.0em;
+  border: none;
+}
+
+#tabl td{
+  color: #4DB2AD;
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none
+}

@@ -47,12 +47,12 @@ header{
 }
 
 .headerSearch li:nth-child(2) a:hover{
-  color: #4DB2AD;
+  color: #FFA07A;
   text-decoration: underline;
 }
 
 .headerSearch li:last-child a:hover{
-  color: #4DB2AD;
+  color: #FFA07A;
   text-decoration: underline;
 }
 
@@ -103,19 +103,8 @@ main{
 }
 
 .searchGymButton:hover{
-  background: blue;
+  background: #FFA07A;
 }
-
-/*.boxWhite{
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  background-color: white;
-  opacity: 0.5;
-  z-index: 2;
-}*/
 
 footer{
   position: fixed;

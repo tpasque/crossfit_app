@@ -42,16 +42,16 @@ header{
 }
 
 .headerSearch li:first-child a:hover{
-  color: #4DB2AD;
+  color: #FFA07A;
   text-decoration: underline;
 }
 .headerSearch li:nth-child(2) a{
-  color: white;
+  color: #4DB2AD;
   text-decoration: underline;
 }
 
 .headerSearch li:last-child a:hover{
-  color: #4DB2AD;
+  color: #FFA07A;
   text-decoration: underline;
 }
 
@@ -65,12 +65,12 @@ main{
 }
 
 .formHolder{
-  background-color: black;
-  opacity: 0.5;
   width: 100vw;
   height: 30vh;
-  position: relative;
-  top: 20%;
+  position: fixed;
+  background-color: black;
+  opacity: 0.8;
+  top: 25%;
 }
 
 .searchGymText{
@@ -80,7 +80,7 @@ main{
   font-weight: 100;
   width: 80vw;
   margin: 0 auto;
-  top: 2vh;
+  top: 6vh;
   text-align: center;
   font-size: 2.0em;
   z-index: 1;
@@ -98,26 +98,17 @@ main{
   width: 25vw;
   height: 8vh;
   margin: 0 auto;
-  top: 20vh;
+  top: 45vh;
   left: 35vw;
   text-align: center;
   z-index: 1;
 }
 
 .searchGymButton:hover{
-  background: blue;
+  background: #FFA07A;
 }
 
-.boxWhite{
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  background-color: white;
-  opacity: 0.5;
-  z-index: 2;
-}
+
 
 footer{
   position: fixed;

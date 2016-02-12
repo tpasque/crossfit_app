@@ -21,7 +21,7 @@ header{
 }
 
 .headerSearch li:first-child a:hover{
-  color: #4DB2AD;
+  color: #FFA07A;
   text-decoration: underline;
 }
 
@@ -31,12 +31,12 @@ header{
 }
 
 .headerSearch li:nth-child(2) a:hover{
-  color: #4DB2AD;
+  color: #FFA07A;
   text-decoration: underline;
 }
 
 .headerSearch li:nth-child(3) a:hover{
-  color: #4DB2AD;
+  color: #FFA07A;
   text-decoration: underline;
 }
 
